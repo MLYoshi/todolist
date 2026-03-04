@@ -12,6 +12,7 @@
 ## 🛠️ 技术栈
 
 ### 后端
+
 - **Node.js** - 运行时环境
 - **Express** - Web 框架
 - **MongoDB** - 数据库
@@ -19,6 +20,7 @@
 - **JWT** - 身份认证
 
 ### 前端
+
 - **React** - UI 库
 - **Vite** - 构建工具
 - **Redux Toolkit** - 状态管理
@@ -55,17 +57,20 @@ todolist/
 ### 安装步骤
 
 1. **克隆项目**
+
    ```bash
    git clone <repository-url>
    cd todolist
    ```
 
 2. **安装后端依赖**
+
    ```bash
    npm install
    ```
 
 3. **安装前端依赖**
+
    ```bash
    cd frontend
    npm install
@@ -75,6 +80,7 @@ todolist/
 4. **配置环境变量**
 
    在项目根目录创建 `.env` 文件：
+
    ```env
    PORT=8080
    MONGO_URI=mongodb://localhost:27017/todolist
@@ -89,11 +95,13 @@ todolist/
 #### 开发模式
 
 **启动后端**（终端 1）：
+
 ```bash
 npm run dev
 ```
 
 **启动前端**（终端 2）：
+
 ```bash
 cd frontend
 npm run dev
@@ -115,20 +123,20 @@ npm start
 
 ### 用户认证
 
-| 方法 | 端点 | 描述 |
-|------|------|------|
-| POST | `/api/users` | 注册新用户 |
-| POST | `/api/users/login` | 用户登录 |
-| GET | `/api/users/me` | 获取当前用户（需认证） |
+| 方法 | 端点               | 描述                   |
+| ---- | ------------------ | ---------------------- |
+| POST | `/api/users`       | 注册新用户             |
+| POST | `/api/users/login` | 用户登录               |
+| GET  | `/api/users/me`    | 获取当前用户（需认证） |
 
 ### 待办事项
 
-| 方法 | 端点 | 描述 |
-|------|------|------|
-| GET | `/api/goals` | 获取所有待办事项（需认证） |
-| POST | `/api/goals` | 创建新待办事项（需认证） |
-| PUT | `/api/goals/:id` | 更新待办事项（需认证） |
-| DELETE | `/api/goals/:id` | 删除待办事项（需认证） |
+| 方法   | 端点             | 描述                       |
+| ------ | ---------------- | -------------------------- |
+| GET    | `/api/goals`     | 获取所有待办事项（需认证） |
+| POST   | `/api/goals`     | 创建新待办事项（需认证）   |
+| PUT    | `/api/goals/:id` | 更新待办事项（需认证）     |
+| DELETE | `/api/goals/:id` | 删除待办事项（需认证）     |
 
 ## 🌐 访问地址
 
@@ -137,12 +145,16 @@ npm start
 
 ## 📝 环境变量说明
 
-| 变量名 | 说明 | 默认值 |
-|--------|------|--------|
-| PORT | 后端服务端口 | 8080 |
-| MONGO_URI | MongoDB 连接字符串 | 必填 |
-| NODE_ENV | 运行环境 | development |
-| JWT_SECRET | JWT 密钥 | 必填 |
+| 变量名     | 说明               | 默认值      |
+| ---------- | ------------------ | ----------- |
+| PORT       | 后端服务端口       | 8080        |
+| MONGO_URI  | MongoDB 连接字符串 | 必填        |
+| NODE_ENV   | 运行环境           | development |
+| JWT_SECRET | JWT 密钥           | 必填        |
+
+## 运行界面
+
+![alt text](/asset/image.png)
 
 ## 📄 License
 
